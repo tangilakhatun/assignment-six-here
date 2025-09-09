@@ -55,7 +55,7 @@
     </ul>
   </div>
   <div class="navbar-end">
-    <a class="btn bg-[#FACC15] py-[12px] px-[20px] rounded-3xl mr-24 border-none sm:mr-24 text-[#15803D]">Plant a Tree</a>
+    <a class="btn bg-[#FACC15] py-[12px] px-[20px] rounded-3xl mr-4 border-none sm:mr-24 text-[#15803D]">Plant a Tree</a>
   </div>
 </div>
 <section class="min-h-[383px]  bg-[#CFF0DC] flex flex-col sm:flex-row justify-between text-center items-center">
@@ -95,23 +95,23 @@ generations.</p>
       <!-- trees container -->
       <div id="trees-container" class="grid grid-cols-12 w-11/12 mx-auto gap-3">
         <!-- category -->
-        <div id="category" class="col-span-12 gap-3 lg:col-span-2">
+        <div id="category" class="col-span-12  space-y-3 lg:col-span-2">
           <h2 class="text-[20px] font-bold">Category</h2>
         </div>
 
         <!-- cards container -->
         <div
           id="Cards-container"
-          class="lg:col-span-8 col-span-12 grid md:grid-cols-3 sm:grid-cols-2 gap-3"
+          class="lg:col-span-8 col-span-12 grid  md:grid-cols-3 sm:grid-cols-2 gap-3 "
         ></div>
-        <div class="col-span-12 lg:col-span-2">
-          <h2>Your Cart</h2>
+        <div class="col-span-12 bg-white rounded-md lg:col-span-2">
+          <h2 class="text-[18px] font-bold p-3">Your Cart</h2>
           <div id="cart"></div>
           <div
             id="price-continer"
             class="total-price my-3  flex justify-between"
           >
-            <h2>Total</h2>
+            <h2 class="text-[16px] p-3 font-semibold">Total:</h2>
             <h2 id="total-price"></h2>
           </div>
         </div>

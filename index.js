@@ -29,7 +29,7 @@ const displayAllPlants = (plants) => {
                 <p>${description.slice(0, 70)}</p>
               </div>
               <div class="flex justify-between my-3 font-bold">
-                <p class="px-2 py-1 bg-green-300 rounded-full">${category}</p>
+                <p class="px-2 py-1 bg-green-200 rounded-full">${category}</p>
                 <p>৳${price}</p>
               </div>
               <button onclick="displayCart('${name}',${price},${id})" class="btn w-full rounded-full text-white bg-[#15803D]">
@@ -103,7 +103,7 @@ const displayDetails = (details) => {
                 <p>${description}</p>
               </div>
               <div class="flex justify-between my-3 font-bold">
-                <p class="px-2 py-1 bg-green-300 rounded-full">${category}</p>
+                <p class="px-2 py-1 bg-green-100 rounded-full">${category}</p>
                 <p>৳${price}</p>
               </div>
 
@@ -148,13 +148,13 @@ const dataAddToCart = (carts) => {
     const { name, price, id } = cart;
     total += price;
     const div = document.createElement("div");
-    div.className = "mb-3 bg-gray-300 flex justify-between items-center";
+    div.className = "mb-3 bg-green-200 flex justify-between items-center";
     div.innerHTML = `
-    <div class="">
+    <div class="p-2">
     <h2>${name}</h2>
-    <h2>${price}</h2>
+    <h2>৳${price}</h2>
     </div>
-    <button onclick="cartFilter(${id})" class="btn font-bold text-red-600">X</button>
+    <button onclick="cartFilter(${id})" class="btn p-3 font-bold text-red-600">X</button>
     `;
     cartContainer.append(div);
   }
